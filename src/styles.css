@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+.occidental{
+    --background-color: #60b2e7;
+    --background-color-2: #646be1;
+    --primary-color: #acd5ff;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: sans-serif;
+    background-color: #F7F7F7;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}

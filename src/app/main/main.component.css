@@ -1,0 +1,9 @@
+#main{
+    margin-top: -75px;
+}
+
+#banner{
+    height: 500px;
+    background-image: url(../../assets/images/banner.webp);
+    background-position: center;
+}

@@ -1,0 +1,41 @@
+#header{
+    display: flex;
+    align-items: center;
+    height: 75px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    color: #383838;
+    justify-content: space-between;
+}
+
+#header img{
+    width: 50px;
+    border-radius: 10px;
+}
+
+nav{
+    width: 80%;
+    max-width: 300px;
+}
+
+ul{
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+#modos{
+    border-radius: 20px;
+    border: 1px solid var(--background-color-2);
+    background-color: var(--primary-color);
+}
+
+#modos button{
+    border: none;
+    background-color: var(--background-color-2);
+    padding: 10px 15px;
+    border-radius: 18px;
+    color: white;
+    font-size: 13pt;
+    font-weight: bold;
+}
+
