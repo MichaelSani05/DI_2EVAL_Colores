@@ -6,6 +6,14 @@
     --text-color: #383838;
 }
 
+.oriental{
+    --background-color: #60e3e7;
+    --background-color-2: #9064e1;
+    --primary-color: #1a6f47;
+    --secondary-color: #abfee5;
+    --text-color: #383838;
+}
+
 body{
     margin: 0;
     padding: 0;

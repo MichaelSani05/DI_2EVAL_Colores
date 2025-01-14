@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { SliderComponent } from "../slider/slider.component";
 
 @Component({
   selector: 'app-main',
-  imports: [],
+  imports: [SliderComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })
