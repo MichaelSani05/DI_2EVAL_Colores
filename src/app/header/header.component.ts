@@ -1,25 +1,29 @@
-import { Component, Renderer2 } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { ThemeService } from '../services/theme.service';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  private isOccidental: boolean = true;
+  mode: string = ''
 
-  constructor(private renderer: Renderer2) {}
+  constructor(private themeService: ThemeService) {}
+
+  ngOnInit(): void {
+    this.themeService.mode$.subscribe((mode) => {
+      this.mode = mode;
+      console.log(this.mode);
+    });
+  }
 
   toggleTheme(): void {
-    this.isOccidental = !this.isOccidental;
-
-    if (this.isOccidental) {
-      this.renderer.removeClass(document.body, 'oriental');
-      this.renderer.addClass(document.body, 'occidental');
-    } else {
-      this.renderer.removeClass(document.body, 'occidental');
-      this.renderer.addClass(document.body, 'oriental');
-    }
+    const currentMode = this.themeService.getMode();
+    const newMode = currentMode === 'occidental' ? 'oriental' : 'occidental';
+    this.mode = newMode;
+    this.themeService.setMode(newMode);
   }
 }

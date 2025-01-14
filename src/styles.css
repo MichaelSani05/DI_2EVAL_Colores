@@ -2,16 +2,16 @@
     --background-color: #60b2e7;
     --background-color-2: #646be1;
     --primary-color: #1A3E6F;
-    --secondary-color: #abd4fe;
+    --secondary-color: #A8D5BA;
     --text-color: #383838;
 }
 
 .oriental{
     --background-color: #60e3e7;
-    --background-color-2: #9064e1;
-    --primary-color: #1a6f47;
-    --secondary-color: #abfee5;
-    --text-color: #383838;
+    --background-color-2: #90CAF9;
+    --primary-color: #E5C07B;
+    --secondary-color: #E5C07B;
+    --text-color: #3B3B3B;
 }
 
 body{
