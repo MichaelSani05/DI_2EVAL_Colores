@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ElementRef, Renderer2 } from '@angular/core';
 import { ThemeService } from '../services/theme.service';
 
 @Component({
@@ -11,12 +11,17 @@ import { ThemeService } from '../services/theme.service';
 export class HeaderComponent {
   mode: string = ''
 
-  constructor(private themeService: ThemeService) {}
+  constructor(private renderer: Renderer2, private themeService: ThemeService, private el: ElementRef) {}
 
   ngOnInit(): void {
     this.themeService.mode$.subscribe((mode) => {
       this.mode = mode;
       console.log(this.mode);
+      if (mode == 'occidental') {
+        
+      } else if (mode == 'oriental') {
+        
+      }
     });
   }
 

@@ -10,7 +10,7 @@
     --background-color: #60e3e7;
     --background-color-2: #90CAF9;
     --primary-color: #E5C07B;
-    --secondary-color: #E5C07B;
+    --secondary-color: rgb(229, 192, 123);
     --text-color: #3B3B3B;
 }
 
@@ -41,4 +41,13 @@ h1{
 h3{
     color: var(--text-color);
     font-weight: 600;
+}
+
+
+.occidental div#header {
+    background: linear-gradient(180deg, rgba(4, 50, 88, 1) 0%, rgba(4, 50, 88, 0) 100%);
+}
+
+.oriental div#header {
+    background: linear-gradient(180deg, rgb(216, 167, 76) 0%, rgba(214, 168, 83, 0) 100%);
 }
