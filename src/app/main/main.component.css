@@ -89,6 +89,7 @@
 
 .card{
     text-align: left;
+    max-width: 300px;
 }
 
 .card h2{
