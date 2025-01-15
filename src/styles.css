@@ -43,6 +43,7 @@ h3{
     font-weight: 600;
 }
 
+/* HEADER */
 
 .occidental div#header {
     background: linear-gradient(180deg, rgba(4, 50, 88, 1) 0%, rgba(4, 50, 88, 0) 100%);
@@ -51,3 +52,23 @@ h3{
 .oriental div#header {
     background: linear-gradient(180deg, rgb(216, 167, 76) 0%, rgba(214, 168, 83, 0) 100%);
 }
+
+
+/* MAIN */
+.occidental div#header, .oriental div#header{
+    animation: menu linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 200px;
+}
+
+@keyframes menu {
+    from{
+      height: 100px;
+    }
+
+    to{
+      height: 75px;
+      background-color: rgba(94, 94, 94, 0.5);
+      backdrop-filter: blur(5px);
+    }
+  }

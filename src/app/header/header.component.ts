@@ -10,6 +10,7 @@ import { ThemeService } from '../services/theme.service';
 })
 export class HeaderComponent {
   mode: string = ''
+  logoImage : string = ''
 
   constructor(private renderer: Renderer2, private themeService: ThemeService, private el: ElementRef) {}
 
@@ -18,9 +19,9 @@ export class HeaderComponent {
       this.mode = mode;
       console.log(this.mode);
       if (mode == 'occidental') {
-        
+        this.logoImage = '../../assets/images/Mindly.png'
       } else if (mode == 'oriental') {
-        
+        this.logoImage = '../../assets/images/Mindly-2.png'
       }
     });
   }

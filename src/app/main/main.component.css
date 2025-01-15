@@ -103,3 +103,49 @@
     width: 100%;
     background-image: url("../../assets/images/banner-2.webp");
 }
+
+#cursos{
+    margin: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.course-card{
+    width: 350px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.course-card img{
+    height: 100%;
+    width: 100%;
+}
+
+.card-info{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    width: 80%;
+    display: none;
+    transition: 0.3s all ease-in-out;
+    transform: translateY(100%);
+}
+
+.card-info h2, .card-info strong{
+    color: var(--background-color);
+}
+
+.course-card:hover .card-info{
+    display: block;
+    transform: translateY(0%);
+    transition: 0.3s all ease-in-out;
+}
+
+.course-card:hover img{
+    filter: brightness(0.5);
+}
+

@@ -9,7 +9,6 @@
             <h3>La web número uno para dormir, meditar y relajarse.</h3>
             <div id="hero1-buttons">
                 <button type="button" class="important-button">Cursos y actividades</button>
-                <button type="button">Blog</button>
             </div>
         </div>
         <div id="hero2">
@@ -39,4 +38,15 @@
     </div>
     <div class="gradient-top"></div>
     <app-slider style="width: 100%;"></app-slider>
+    <div id="cursos">
+        <div *ngFor="let course of courses" class="course-card">
+            <img [src]="course.backgroundImage" alt="{{course.title}}">
+            <div class="card-info">
+                <h2>{{ course.title }}</h2>
+                <p>{{ course.description }}</p>
+                <p><strong>Autor:</strong> {{ course.author }}</p>
+                <p><strong>Nota media:</strong> {{ course.averageRating }}</p>
+            </div>
+        </div>
+    </div>
 </div>
