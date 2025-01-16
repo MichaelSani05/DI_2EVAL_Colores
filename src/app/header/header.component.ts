@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef, Renderer2 } from '@angular/core';
 import { ThemeService } from '../services/theme.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
@@ -32,4 +33,31 @@ export class HeaderComponent {
     this.mode = newMode;
     this.themeService.setMode(newMode);
   }
+
+  headerCompleto(){
+    const headerElement = this.el.nativeElement.querySelector('#header');
+    if (headerElement) {
+      this.renderer.setStyle(
+        headerElement,
+        'background-color',
+        `var(--background-color-2)`
+      );
+    } else {
+      console.warn('Banner element not found!');
+    }
+  }
+
+  quitarHeader(){
+    const headerElement = this.el.nativeElement.querySelector('#header');
+    if (headerElement) {
+      this.renderer.setStyle(
+        headerElement,
+        'background-color',
+        `none`
+      );
+    } else {
+      console.warn('Banner element not found!');
+    }
+  }
+
 }

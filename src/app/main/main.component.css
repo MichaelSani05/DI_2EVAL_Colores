@@ -105,10 +105,13 @@
 }
 
 #cursos{
-    margin: 20px 0px;
+    margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    max-width: 1200px;
+    width: 80%;
+    justify-content: center;
 }
 
 .course-card{
@@ -122,6 +125,7 @@
 .course-card img{
     height: 100%;
     width: 100%;
+    transition: 0.2s all ease-in-out;
 }
 
 .card-info{
@@ -130,7 +134,6 @@
     left: 15px;
     color: white;
     width: 80%;
-    display: none;
     transition: 0.3s all ease-in-out;
     transform: translateY(100%);
 }
@@ -140,7 +143,6 @@
 }
 
 .course-card:hover .card-info{
-    display: block;
     transform: translateY(0%);
     transition: 0.3s all ease-in-out;
 }

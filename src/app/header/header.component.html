@@ -1,8 +1,8 @@
 <div id="header">
-    <img id="logo" src="{{logoImage}}" alt="">
+    <a href=""><img id="logo" src="{{logoImage}}" alt=""></a>
     <nav>
         <ul>
-            <a href="">
+            <a href="" [routerLink]="['/activities']" routerLinkActive="router-link-active" (click)="headerCompleto()">
                 <li>Activities</li>
             </a>
             <a href="">

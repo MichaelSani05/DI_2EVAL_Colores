@@ -1,0 +1,17 @@
+#footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--background-color-2);
+    color: white;
+    box-sizing: border-box;
+    padding: 25px 20px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 760px) {
+    #footer{
+        flex-direction: column;
+        text-align: center;
+    }
+}
