@@ -71,3 +71,52 @@
     border: none !important;
     color: white;
 }
+
+#activities-hero1{
+    margin-top: 75px;
+}
+
+#activities-hero1 h1{
+    text-align: center;
+}
+
+#activities-banner{
+    display: flex;
+    height: 545px;
+    background-color: #2C75B0;
+    margin: 100px 0px;
+}
+
+#activities-banner-img img{
+    height: 100%;
+}
+
+#activities-banner-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    color: white;
+}
+
+#banner-text{
+    width: 60%;
+}
+
+#banner-text h2{
+    font-size: 26pt;
+    font-weight: 600;
+}
+
+#banner-text p{
+    font-size: 13pt;
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+#separador{
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(90deg, rgb(44, 117, 176, 1) 0%, rgb(44, 117, 176, 0.5) 50%, rgb(44, 117, 176, 0) 100%);
+    transform: translateX(100%);
+}
