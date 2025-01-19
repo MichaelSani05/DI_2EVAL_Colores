@@ -2,15 +2,13 @@
     --background-color: #60b2e7;
     --background-color-2: #646be1;
     --primary-color: #1A3E6F;
-    --secondary-color: #A8D5BA;
     --text-color: #383838;
 }
 
 .oriental{
-    --background-color: #60e3e7;
-    --background-color-2: #90CAF9;
-    --primary-color: #E5C07B;
-    --secondary-color: rgb(229, 192, 123);
+    --background-color: #00A86B;
+    --background-color-2: #FFA07A;
+    --primary-color: #039caf;
     --text-color: #3B3B3B;
 }
 
@@ -50,7 +48,7 @@ h3{
 }
 
 .oriental div#header {
-    background: linear-gradient(180deg, rgb(216, 167, 76) 0%, rgba(214, 168, 83, 0) 100%);
+    background: linear-gradient(180deg, var(--background-color) 0%, rgba(214, 168, 83, 0) 100%);
 }
 
 /* MAIN */
