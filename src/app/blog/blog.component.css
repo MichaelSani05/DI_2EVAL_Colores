@@ -1,8 +1,8 @@
 #blog-container{
-    margin-top: 100px;
+    margin: 100px 0px;
 }
 
-#blog-banner{
+.blog-banner{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -11,12 +11,12 @@
     margin-top: 150px;
 }
 
-#blog-banner h1{
+.blog-banner h1{
     color: var(--background-color);
     font-size: 28pt;
 }
 
-#blog-banner p{
+.blog-banner p{
     font-size: 14pt;
     color: var(--text-color);
     width: 80%;
@@ -24,7 +24,7 @@
     line-height: 2rem;
 }
 
-#blog-banner img{
+.blog-banner img{
     width: 75%;
     max-width: 600px;
 }

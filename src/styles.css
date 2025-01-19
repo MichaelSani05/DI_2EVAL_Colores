@@ -45,14 +45,13 @@ h3{
 
 /* HEADER */
 
-.occidental div#header {
+.occidental div#header{
     background: linear-gradient(180deg, rgba(4, 50, 88, 1) 0%, rgba(4, 50, 88, 0) 100%);
 }
 
 .oriental div#header {
     background: linear-gradient(180deg, rgb(216, 167, 76) 0%, rgba(214, 168, 83, 0) 100%);
 }
-
 
 /* MAIN */
 .occidental div#header, .oriental div#header{

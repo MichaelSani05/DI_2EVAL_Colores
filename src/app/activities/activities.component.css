@@ -17,7 +17,7 @@
     width: 100%;
     display: flex;
     overflow: hidden;
-    max-height: 100vh;
+    background-color: #e1e4e9;
 }
 
 .activity-content{
@@ -51,6 +51,7 @@
 
 .activity-img img{
     width: 100%;
+    height: 100%;
 }
 
 .act-txt-2{
@@ -70,6 +71,7 @@
     background: linear-gradient(180deg, var(--background-color) 0%, var(--background-color-2) 100%);
     border: none !important;
     color: white;
+    min-width: fit-content;
 }
 
 #activities-hero1{
@@ -82,13 +84,18 @@
 
 #activities-banner{
     display: flex;
-    height: 545px;
-    background-color: #2C75B0;
-    margin: 100px 0px;
+    height: auto;
+    background-color: var(--background-color-2);
+    margin-top: 100px;
+}
+
+#activities-banner-img{
+    width: 50%;
 }
 
 #activities-banner-img img{
     height: 100%;
+    width: 100%;
 }
 
 #activities-banner-content{
@@ -97,6 +104,8 @@
     justify-content: center;
     align-items: end;
     color: white;
+    padding: 25px;
+    box-sizing: border-box;
 }
 
 #banner-text{
@@ -116,7 +125,61 @@
 
 #separador{
     width: 200px;
-    height: 100%;
-    background: linear-gradient(90deg, rgb(44, 117, 176, 1) 0%, rgb(44, 117, 176, 0.5) 50%, rgb(44, 117, 176, 0) 100%);
+    height: auto;
+    background: linear-gradient(90deg, var(--background-color-2) 0%, rgb(44, 117, 176, 0.5) 50%, rgb(44, 117, 176, 0) 100%);
     transform: translateX(100%);
+}
+
+@media screen and (max-width: 1300px){
+        
+    .activity-text{
+        width: 80%;
+        padding: 75px;
+        line-height: 2rem;
+    }
+
+    .activity-text h1{
+        font-size: 30pt;
+        font-weight: 600;
+        line-height: 4rem;
+    }
+    
+    #activities-banner-content{
+        width: 40%;
+    }
+
+    #banner-text{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 986px){
+    .activity{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #activities{
+        background-color: #e1e4e9;
+        padding-bottom: 100px;
+    }
+    
+    .act-txt-2{
+        order: 0;
+    }
+
+    .activity-content{
+        width: 100%;
+    }
+
+    #activities-banner-img, #separador{
+        display: none;
+    }
+
+    #activities-banner-content{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
 }

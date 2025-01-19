@@ -151,3 +151,18 @@
     filter: brightness(0.5);
 }
 
+@media screen and (max-width: 930px) {
+    #banner{
+        height: 400px;
+    }
+
+    .hero h1{
+        font-size: 26pt;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #banner{
+        height: 300px;
+    }
+}
